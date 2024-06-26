@@ -1,4 +1,4 @@
-package com.snick55.composemoviesapp.ui.theme
+package com.snick55.composemoviesapp.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

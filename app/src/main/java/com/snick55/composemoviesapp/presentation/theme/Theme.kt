@@ -1,4 +1,4 @@
-package com.snick55.composemoviesapp.ui.theme
+package com.snick55.composemoviesapp.presentation.theme
 
 import android.app.Activity
 import android.os.Build
