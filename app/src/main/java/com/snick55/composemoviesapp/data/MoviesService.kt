@@ -9,6 +9,7 @@ interface MoviesService {
     suspend fun getMovies(
         @Query("page") page: Int,
         @Query("limit") limit: Int,
+        @Query("notNullFields") notNullFields: List<String> = listOf("id","name","ageRating","countries.name","description","year")
     ): MoviesResponse
 
 }
