@@ -4,6 +4,7 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.map
+import com.snick55.composemoviesapp.di.IoDispatcher
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -16,7 +17,7 @@ interface MoviesRepository {
 
     class Base @Inject constructor(
         private val moviesApi: MoviesService,
-        private val ioDispatcher: CoroutineDispatcher,
+       @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
         private val errorHandler: ErrorHandler
     ): MoviesRepository{
 
